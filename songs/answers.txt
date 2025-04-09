@@ -1,0 +1,2 @@
+To characterize the audio aura of a user, I would take the average of the energy, valence and danceability of their top hundred songs and then compare these values to the standard values for these elements for audio aura.
+It might not be very representative of the listener because it gives equal weightage to the first and hundredth songs, although first songs might have been played significantly much more times than the hundredth song. In order to give the proper weightage, I would add a multiplying factor to give more weightage to top songs.

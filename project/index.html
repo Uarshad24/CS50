@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/87bdcac70e.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Main Section -->
+        <div id="header">
+            <div id="bg"></div>
+            <div class="container">
+                <nav>
+                    <div></div>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#tabs">Skills</a></li>
+                        <li><a href="#portfolio">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Data Scientist / Machine Learning Engineer</p>
+                    <h1>Hi, I am <span>Umer</span></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="https://api.memegen.link/images/custom/Error 404: / Photo not found.jpg?background=https://i.imgur.com/CsCgN7Ll.png&width=400">
+                        <!-- <img src="images/Background.jpeg"> -->
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me </h1>
+                        <p> ABC </p>
+                        <div class="tab-titles" id="tabs">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Languages:</span> Python, SQL, C, JavaScript </li>
+                                <li><span>Databases:</span> MySQL</li>
+                                <li><span>Libraries:</span> Numpy, Pandas, SkLearn, Pytorch, Tensorflow, Matplotlib</li>
+                                <li><span>Machine Learning:</span> Regression, Classification, Neural Networks (CNN, RNN, LSTM)</li>
+                                <li><span>Data Analysis :</span> Time Series Analysis, Predictive Analysis, Recommendation Systems</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Certifications">
+                            <ul>
+                                <li><span>Google:</span> Advanced Data Analytics Professional Certificate</li>
+                                <li><span>Stanford University & DeepLearning.AI:</span> Machine Learning Specialization</li>
+                                <li><span>HarvardX:</span> CS50's Introduction to Computer Science</li>
+                                <li><span>University of Michigan:</span> Python Specialization</li>
+                                <li><span>UC Davis:</span> SQL for Data Science</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>National University of Sciences and Technology, Pakistan</span> </li>
+                                <li> BS Engineering <span>(2015-2019)</span> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="text"> SELECT * FROM UMER</p>
+                <a href="files/Resume.pdf" download class="btn"> Download CV </a>
+            </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title centered">My Work</h1>
+                <div class="work-list">
+                    <a href="https://github.com/Uarshad24/Image-Classification" target="_blank">
+                        <div>
+                            <h2>Time Series Analysis</h2>
+                            <p> ABC </p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Uarshad24/Image-Classification" target="_blank">
+                        <div>
+                            <h2>Image Classification</h2>
+                            <p>Built a dataset for an image classifier by scraping car listings from Pakwheels using Selenium and BeautifulSoup. Collected 20,000 images, cleaned and filtered the data, and applied object detection with Roboflow to select relevant car images. Processed the images by cropping, resizing, and labeling for classification tasks.</p>
+                        </div>
+                    </a>
+                    <a href="https://api.memegen.link/images/custom/Error 404: Project not found/This Project is under construction.jpg?background=https://i.imgur.com/CsCgN7Ll.png&width=400" target="_blank">
+                        <div>
+                            <h2>Recommendation Systems</h2>
+                            <p>Next in Line</p>
+                            <p>This project will explore the development and implementation of recommendation algorithms, aimed at enhancing user experience through personalized content suggestions. </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact">
+            <div class="container">
+                <h1 class="sub-title centered">Contact Me</h1>
+                <div class="details">
+                    <p> <i class="fa-solid fa-envelope"></i> Umer.arshad101@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +923365017444</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/umer-arshad-7816a4307" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Uarshad24" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.kaggle.com/umerarshad101" target="_blank"><i class="fa-brands fa-kaggle"></i></a>
+                    <a href="https://medium.com/@umer.arshad101" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaSript -->
+        <script type="text/javascript" src="js/particles.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+    </body>
+
+</html>
