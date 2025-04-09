@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+<table>
+    <thead>
+        <tr>
+            <th> stock_symbol </th>
+            <th> stock_price </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> {{ dict_values['symbol'] }} </td>
+            <td>  {{ quote | usd}}</td>
+        </tr>
+    </tbody>
+
+
+{% endblock %}
+
+
+
+

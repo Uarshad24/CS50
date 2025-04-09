@@ -1,0 +1,24 @@
+10 HTML Tags
+1) <div>
+2) <img>
+3) <h1>
+4) <p>
+5) <li>
+6) <table>
+7) <a>
+8) <form>
+9) <input>
+10) <button>
+
+5 CSS properties
+1) text-align
+2) font-size
+3) background-color
+4) border
+5) padding
+
+JavaScript
+The webpage asked 3 questions. One is to answer through search box while the other twos are multiple choice questions. For every right answer score of 1 will be added while for every wrong answer, in case of multiple choice questions, 0.25 will be deducted.
+
+Bootstrap
+I used bootstrap to create a dropdown menu by using class = dropdown

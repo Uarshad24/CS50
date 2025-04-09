@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <h1>
+        USER : {{ Username }}
+    </h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th> stock_symbol </th>
+                <th> stock_quantity </th>
+                <th> stock_price </td>
+                <th> stock_value </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <!-- TODO: Loop through the database entries to display them in this table -->
+            {% for row in portfolio %}
+            <tr>
+                <td> {{ row.stock_symbol }} </td>
+                <td> {{ row.stock_quantity }} </td>
+                <td> {{ row.stock_price | usd }} </td>
+                <td> {{ row.stock_value | usd }} </td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td colspan = '3' align = 'right'><strong>Cash</strong></td>
+                <td>  {{ cash | usd }} </td>
+            </tr>
+            <tr>
+                <td colspan = '3' align = 'right'>
+                    <strong>Total</strong></td>
+                    <td> {{ total | usd }} </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+{% endblock %}
